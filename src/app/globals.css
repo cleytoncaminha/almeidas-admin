@@ -1,15 +1,3 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html,
 body {
   max-width: 100vw;
@@ -18,9 +6,12 @@ body {
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #a0a0a0 ;
+  background-image: url('/logo_almeidas.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center 40%;
   font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -35,8 +26,9 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 600px) {
+  body {
+    background-image: none;
+    background-position: center top;
   }
 }
